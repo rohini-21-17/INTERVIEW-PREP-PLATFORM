@@ -1,0 +1,82 @@
+.dashboard-page { padding: 40px 0 80px; }
+
+.dash-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.dash-hero h1 { font-size: 36px; font-weight: 800; }
+.dash-subtitle { color: var(--muted); margin-top: 4px; }
+.accent-text { color: var(--accent); }
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px 20px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+.stat-card:hover { border-color: var(--border2); transform: translateY(-2px); }
+.stat-card-accent { border-color: rgba(108,99,255,0.4); background: rgba(108,99,255,0.06); }
+
+.stat-value {
+  font-family: 'Syne', sans-serif;
+  font-size: 28px;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 4px;
+  line-height: 1.1;
+  word-break: break-word;
+}
+.stat-label { font-size: 13px; color: var(--muted); font-weight: 500; }
+.stat-sub { font-size: 11px; color: var(--muted2); margin-top: 4px; }
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+
+.topic-bars { display: flex; flex-direction: column; gap: 16px; }
+
+.topic-bar { display: flex; flex-direction: column; gap: 6px; }
+.topic-bar-header { display: flex; justify-content: space-between; align-items: center; }
+.topic-bar-name { font-size: 14px; font-weight: 500; }
+.topic-score { font-family: 'DM Mono', monospace; font-size: 13px; font-weight: 500; }
+.topic-bar-sub { font-size: 11px; color: var(--muted2); }
+
+.score-text-high { color: var(--success); }
+.score-text-mid  { color: var(--warning); }
+.score-text-low  { color: var(--danger); }
+
+.fill-high { background: linear-gradient(90deg, var(--success), #2fd98a); }
+.fill-mid  { background: linear-gradient(90deg, var(--warning), #e8941a); }
+.fill-low  { background: linear-gradient(90deg, var(--danger), #ff3d4f); }
+
+.empty-state {
+  text-align: center;
+  padding: 80px 24px;
+  border: 1px dashed var(--border2);
+  border-radius: var(--radius-lg);
+  margin-top: 24px;
+}
+.empty-icon { font-size: 48px; margin-bottom: 16px; }
+.empty-state h3 { font-size: 20px; margin-bottom: 8px; }
+.empty-state p { color: var(--muted); }
+
+.page-loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

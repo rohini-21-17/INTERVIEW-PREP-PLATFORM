@@ -1,0 +1,183 @@
+.practice-page { padding: 40px 0 80px; }
+
+/* ── Setup ── */
+.practice-setup { max-width: 680px; margin: 0 auto; }
+.setup-header { margin-bottom: 28px; }
+.setup-header h1 { font-size: 32px; font-weight: 800; }
+.setup-header p  { color: var(--muted); margin-top: 4px; }
+
+.setup-card { display: flex; flex-direction: column; gap: 24px; }
+
+.topic-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.topic-chip {
+  padding: 7px 16px;
+  border-radius: 24px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+.topic-chip:hover { border-color: var(--accent); color: var(--accent); }
+.topic-chip.active { border-color: var(--accent); background: rgba(108,99,255,0.12); color: var(--accent); }
+
+.setup-row { display: flex; gap: 20px; flex-wrap: wrap; }
+
+.toggle-group {
+  display: flex;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.toggle-btn {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg3);
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'DM Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.toggle-btn:hover { border-color: var(--border2); color: var(--text); }
+
+.active-easy   { border-color: var(--success); background: rgba(67,232,160,0.1); color: var(--success); }
+.active-medium { border-color: var(--warning); background: rgba(245,166,35,0.1); color: var(--warning); }
+.active-hard   { border-color: var(--danger);  background: rgba(255,92,108,0.1); color: var(--danger); }
+.active-count  { border-color: var(--accent);  background: rgba(108,99,255,0.1); color: var(--accent); }
+
+/* ── Session ── */
+.session-wrap { max-width: 680px; margin: 0 auto; }
+
+.session-progress {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.session-meta {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+  font-family: 'DM Mono', monospace;
+}
+
+.session-card { display: flex; flex-direction: column; gap: 20px; }
+
+.q-number {
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.q-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.answer-area { min-height: 150px; }
+
+/* ── Evaluation ── */
+.eval-result { display: flex; flex-direction: column; gap: 20px; }
+
+.eval-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: var(--bg3);
+  border-radius: var(--radius);
+}
+
+.eval-score-label {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: 'DM Mono', monospace;
+}
+
+.eval-score-text {
+  font-size: 18px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.eval-feedback {
+  background: var(--bg3);
+  border-radius: var(--radius);
+  padding: 16px;
+}
+
+.eval-feedback-label {
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: 'DM Mono', monospace;
+  margin-bottom: 8px;
+}
+
+.eval-feedback p { font-size: 14px; line-height: 1.7; color: var(--text); }
+
+/* ── Results ── */
+.results-wrap { max-width: 680px; margin: 0 auto; }
+
+.results-header {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.results-header h1 { font-size: 32px; font-weight: 800; }
+.results-header p { color: var(--muted); margin-top: 4px; }
+.results-avg-label { color: var(--muted); font-size: 13px; margin-top: 10px; }
+
+.results-list { display: flex; flex-direction: column; gap: 16px; }
+
+.result-item { padding: 20px; }
+
+.result-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.result-q {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.result-feedback {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.results-actions {
+  text-align: center;
+  margin-top: 36px;
+}
+
+.mono { font-family: 'DM Mono', monospace; }
